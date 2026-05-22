@@ -87,7 +87,6 @@ If you receive the email, Claude is now connected to 500+ apps.
   - [Collaboration & Project Management](#collaboration--project-management)
   - [Security & Systems](#security--systems)
   - [App Automation via Composio](#app-automation-via-composio)
-  - [Skill Marketplaces & Bundles](#skill-marketplaces--bundles)
 - [Getting Started](#getting-started)
 - [Creating Skills](#creating-skills)
 - [Contributing](#contributing)

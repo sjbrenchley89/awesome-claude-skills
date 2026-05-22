@@ -1,0 +1,8 @@
+{
+  "name": "marketplace",
+  "description": "Install Claude skills from registries and GitHub sources. Supports domain bundles (e.g. engineering-skills@claude-code-skills) and GitHub repos (e.g. alirezarezvani/claude-skills).",
+  "author": {
+    "name": "awesome-claude-skills",
+    "url": "https://github.com/sjbrenchley89/awesome-claude-skills"
+  }
+}

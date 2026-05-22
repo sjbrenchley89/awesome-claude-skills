@@ -87,6 +87,7 @@ If you receive the email, Claude is now connected to 500+ apps.
   - [Collaboration & Project Management](#collaboration--project-management)
   - [Security & Systems](#security--systems)
   - [App Automation via Composio](#app-automation-via-composio)
+  - [Skill Marketplaces & Bundles](#skill-marketplaces--bundles)
 - [Getting Started](#getting-started)
 - [Creating Skills](#creating-skills)
 - [Contributing](#contributing)
@@ -129,6 +130,7 @@ Skills are not MCP servers and not tools. MCP defines how an agent connects to e
 - [jules](https://github.com/sanjay3290/ai-skills/tree/main/skills/jules) - Delegate coding tasks to Google Jules AI agent for async bug fixes, documentation, tests, and feature implementation on GitHub repos. *By [@sanjay3290](https://github.com/sanjay3290)*
 - [LangSmith Fetch](./langsmith-fetch/) - Debug LangChain and LangGraph agents by automatically fetching and analyzing execution traces from LangSmith Studio. First AI observability skill for Claude Code. *By [@OthmanAdi](https://github.com/OthmanAdi)*
 - [lean-ctx](https://github.com/yvgude/lean-ctx) - MCP server and context runtime for AI coding agents: session caching, AST-aware compression, and 90+ shell patterns to reduce token usage. Supports Claude Code, Cursor, Copilot, and other integrations. Install the Claude Code skill with `lean-ctx init --agent claude-code`; docs at [leanctx.com](https://leanctx.com). *By [@yvgude](https://github.com/yvgude)*
+- [Marketplace Plugin](./marketplace-plugin/) - Install Claude skill bundles from GitHub registries and domain sources with `/marketplace:add` and `/marketplace:install` commands; supports `@claude-code-skills` and any GitHub repo source
 - [MCP Builder](./mcp-builder/) - Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.
 - [move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) - Analyzes Move language packages against the official Move Book Code Quality Checklist for Move 2024 Edition compliance and best practices.
 - [OpenWeb](https://github.com/openweb-org/openweb) - Agent-native way to access any website. Calls the same APIs the website calls (JSON in, JSON out) with auth (cookies, JWT, CSRF, signing) auto-resolved per request. 90+ sites built in. *By [@openweb-org](https://github.com/openweb-org)*
@@ -331,6 +333,35 @@ Pre-built workflow skills for 78 SaaS apps via [Rube MCP (Composio)](https://com
 
 **Zoom & Meetings**
 - [Zoom Automation](./zoom-automation/) - Automate Zoom: meetings, recordings, participants, webinars, and reports.
+
+### Skill Marketplaces & Bundles
+
+Pre-packaged collections of skills you can install in one command via the [Marketplace Plugin](./marketplace-plugin/).
+
+```bash
+# Add a source, then install bundles from it
+/marketplace:add alirezarezvani/claude-skills
+/marketplace:add @claude-code-skills
+
+/marketplace:install engineering-skills@claude-code-skills          # 24 core engineering
+/marketplace:install engineering-advanced-skills@claude-code-skills  # 25 POWERFUL-tier
+/marketplace:install product-skills@claude-code-skills               # 12 product skills
+/marketplace:install marketing-skills@claude-code-skills             # 43 marketing skills
+/marketplace:install ra-qm-skills@claude-code-skills                 # 12 regulatory/quality
+/marketplace:install pm-skills@claude-code-skills                    # 6 project management
+/marketplace:install c-level-skills@claude-code-skills               # 28 C-level advisory (full C-suite)
+/marketplace:install business-growth-skills@claude-code-skills       # 4 business & growth
+/marketplace:install finance-skills@claude-code-skills               # 2 finance (analyst + SaaS metrics)
+
+# Individual skills
+/marketplace:install skill-security-auditor@claude-code-skills       # Security scanner
+/marketplace:install playwright-pro@claude-code-skills               # Playwright testing toolkit
+/marketplace:install self-improving-agent@claude-code-skills         # Auto-memory curation
+/marketplace:install content-creator@claude-code-skills
+```
+
+- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) - Curated skill marketplace; install via `/marketplace:add alirezarezvani/claude-skills`
+- [claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace) - Domain-installable skill bundles covering engineering, product, marketing, regulatory, finance, and C-suite workflows; install bundles via `@claude-code-skills` source
 
 ## Getting Started
 
